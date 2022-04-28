@@ -52,7 +52,7 @@ public:
          }
          ITEM* prev = nullptr;
 
-         while (temp && temp->value.prior > value.prior) {
+         while (temp && temp->value.prior >= value.prior) {
              prev = temp;
              temp = temp->next;
          }
