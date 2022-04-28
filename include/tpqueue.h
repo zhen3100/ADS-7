@@ -3,8 +3,8 @@
 #define INCLUDE_TPQUEUE_H_
 
 template<typename T>
-class TPQueue {
- {
+class TPQueue
+{
 private:
     struct ITEM
     {
@@ -38,7 +38,7 @@ public:
          {
              throw std::string("Queue is empty");
          }
-
+         
      }
      void push(const T&value)
      {
@@ -74,8 +74,8 @@ public:
              }
 
          }
-};
 
+};
 struct SYM {
   char ch;
   int prior;
