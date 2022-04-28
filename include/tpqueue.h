@@ -29,9 +29,9 @@ class TPQueue {
              return value;
          } else {
              throw std::string("Queue is empty");
-         } 
+         }
      }
- void push(const T&value) {
+     void push(const T&value) {
          ITEM* temp = head;
          ITEM* item = newIT(value);
          if (head == nullptr) {
