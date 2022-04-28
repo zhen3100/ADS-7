@@ -18,13 +18,12 @@ class TPQueue {
         item->value = value;
         return item;
     }
-public:
+ public:
     TPQueue() {
         tail = head = curr = nullptr;
     }
      T pop() {
-         if (head != nullptr)
-         {
+         if (head != nullptr) {
              T value = head->value;
              head = head->next;
              return value;
@@ -32,7 +31,7 @@ public:
              throw std::string("Queue is empty");
          } 
      }
-     void push(const T&value) {
+ void push(const T&value) {
          ITEM* temp = head;
          ITEM* item = newIT(value);
          if (head == nullptr) {
