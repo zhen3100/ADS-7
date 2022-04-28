@@ -18,7 +18,7 @@ class TPQueue {
         item->value = value;
         return item;
     }
- public:
+  public:
     TPQueue() {
         tail = head = curr = nullptr;
     }
